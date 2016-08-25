@@ -1,0 +1,11 @@
+body {
+  color: skyblue;background:#ccc; }
+  body h1 {
+    font-size: 32px; }
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
