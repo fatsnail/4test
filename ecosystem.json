@@ -15,7 +15,7 @@
 	      "host" : "192.168.61.105",
 	      "ref"  : "origin/master",
 	      "repo" : "git@github.com:fatsnail/4test.git",
-	      "path" : "/Sites/apps/webApp",
+	      "path" : "/home/jcl/Sites/apps/webApp",
 	      "post-deploy" : "pm2 startOrRestart ecosystem.json --env production",
 	      "env"  : {
 	        "NODE_ENV": "production"
