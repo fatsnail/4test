@@ -1,0 +1,25 @@
+{
+	"apps" : [{
+	    "name"      : "API",
+	    "script"    : "app.js",
+	    "env": {
+	      "COMMON_VARIABLE": "true"
+	    },
+	    "env_production" : {
+	      "NODE_ENV": "production"
+	    }
+	  }],
+	  "deploy" : {
+	    "production" : {
+	      "user" : "jcl",
+	      "host" : "192.168.61.105",
+	      "ref"  : "origin/master",
+	      "repo" : "git@github.com:fatsnail/4test.git",
+	      "path" : "/Sites/apps/webApp",
+	      "post-deploy" : "pm2 startOrRestart ecosystem.json --env production",
+	      "env"  : {
+	        "NODE_ENV": "production"
+	      }
+	    }
+	}
+}
